@@ -4,23 +4,26 @@ DNA_Target_length = 50000.0
 length_Fragment = 300
 frag = 600
 allfrag = 4
-factorial_One = 300
+fact_One = 300
 
- # creating factorial for loop
+ # METHOD 1: Calc using for loop
 for i in range(1, allfrag):
-	factorial_One = factorial_One + length_Fragment
+	fact_One = fact_One + length_Fragment
 
         
-FACTORIAL_ANSWER = (factorial_One/DNA_Target_length) 
-print(FACTORIAL_ANSWER)
+FACT_ANSWER = (fact_One/DNA_Target_length) 
+print("Fraction: ",  Fraction(FACTORIAL_ANSWER))
+print("Percent: ", FACTORIAL_ANSWER  * 100,"%")
 
-factorial_Two = 300
+
+# Method 2: Calc using while loop
+fact_Two = 300
 i = 1
  
 while i <= allfrag-1:
-	factorial_Two = factorial_Two  + length_Fragment
+	fact_Two = fact_Two  + length_Fragment
 	i = i + 1
+FACT_ANSWER_NEXT = (fact_Two /DNA_Target_length)
 
-FACTORIAL_ANSWER_NEXT = (factorial_Two /DNA_Target_length)
-
-print(FACTORIAL_ANSWER_NEXT)
+print("Fraction: ",Fraction( FACT_ANSWER_NEXT))
+print("Percent: ", FACT_ANSWER_NEXT * 100,"%")
